@@ -1,0 +1,6 @@
+---
+install_restic_packages:
+  debian: &debian
+    - "restic"
+  debian_armv7l: *debian
+  debian_x86_64: *debian

@@ -1,0 +1,7 @@
+---
+- name: "Install restic"
+  package:
+    pkg: "{{ install_restic_packages[(ansible_os_family | lower) + '_' + (ansible_architecture | lower)] }}"
+    state: "present"
+  tags:
+    - "restic"
